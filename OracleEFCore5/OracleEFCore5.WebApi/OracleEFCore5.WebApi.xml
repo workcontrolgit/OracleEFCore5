@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OracleEFCore5.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.EmployeesController.Get(OracleEFCore5.Application.Features.Employees.Queries.GetEmployees.GetEmployeesQuery)">
+            <summary>
+            GET: api/controller
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Get(OracleEFCore5.Application.Features.Positions.Queries.GetPositions.GetPositionsQuery)">
+            <summary>
+            GET: api/controller
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Get(System.Guid)">
+            <summary>
+            GET api/controller/5
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Post(OracleEFCore5.Application.Features.Positions.Commands.CreatePosition.CreatePositionCommand)">
+            <summary>
+            POST api/controller
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.AddMock(OracleEFCore5.Application.Features.Positions.Commands.CreatePosition.InsertMockPositionCommand)">
+            <summary>
+            Bulk insert fake data by specifying number of rows
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Put(System.Guid,OracleEFCore5.Application.Features.Positions.Commands.UpdatePosition.UpdatePositionCommand)">
+            <summary>
+            PUT api/controller/5
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Delete(System.Guid)">
+            <summary>
+            DELETE api/controller/5
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
