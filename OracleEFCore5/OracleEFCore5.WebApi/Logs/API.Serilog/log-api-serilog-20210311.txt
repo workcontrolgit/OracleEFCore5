@@ -1,0 +1,10 @@
+[2021-03-11 22:08:11.637] [Information] DESKTOP-JP30Q7T (1) <> Application Starting
+[2021-03-11 22:09:50.299] [Information] DESKTOP-JP30Q7T (1) <> Application Starting
+[2021-03-11 22:10:32.807] [Information] DESKTOP-JP30Q7T (1) <> Application Starting
+[2021-03-11 22:13:29.322] [Information] DESKTOP-JP30Q7T (1) <> Application Starting
+[2021-03-11 22:23:09.399] [Information] DESKTOP-JP30Q7T (1) <> Application Starting
+[2021-03-11 22:33:58.110] [Information] DESKTOP-JP30Q7T (1) <> Application Starting
+[2021-03-11 22:39:01.305] [Information] DESKTOP-JP30Q7T (1) <> Application Starting
+[2021-03-11 22:40:24.247] [Information] DESKTOP-JP30Q7T (1) <> Application Starting
+[2021-03-11 22:43:34.722] [Information]  () <> Application Starting
+[2021-03-11 22:44:24.214] [Information]  () <> Application Starting
