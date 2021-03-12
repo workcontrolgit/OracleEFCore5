@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using OracleEFCore5.Application.Features.Positions.Commands.CreatePosition;
 using OracleEFCore5.Application.Features.Positions.Commands.DeletePositionById;
 using OracleEFCore5.Application.Features.Positions.Commands.UpdatePosition;
 using OracleEFCore5.Application.Features.Positions.Queries.GetPositionById;
 using OracleEFCore5.Application.Features.Positions.Queries.GetPositions;
+using Serilog;
 using System;
 using System.Threading.Tasks;
 
@@ -15,6 +17,11 @@ namespace OracleEFCore5.WebApi.Controllers.v1
     [ApiVersion("1.0")]
     public class PositionsController : BaseApiController
     {
+        private readonly ILoggerFactory _loggerFactory;
+        public PositionsController(ILoggerFactory loggerFactory)
+        {
+            _loggerFactory = loggerFactory;
+        }
         /// <summary>
         /// GET: api/controller
         /// </summary>
@@ -23,6 +30,8 @@ namespace OracleEFCore5.WebApi.Controllers.v1
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] GetPositionsQuery filter)
         {
+            Log.Information($"GET Position called at {DateTime.Now}");
+            _loggerFactory.CreateLogger("GET Position called at");
             return Ok(await Mediator.Send(filter));
         }
 

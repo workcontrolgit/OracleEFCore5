@@ -27,7 +27,7 @@ namespace OracleEFCore5.WebApi
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-                var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+                //var loggerFactory = services.GetRequiredService<ILoggerFactory>();
                 try
                 {
                     Log.Information("Application Starting");
@@ -45,10 +45,10 @@ namespace OracleEFCore5.WebApi
         }
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-            .UseSerilog() //Uses Serilog instead of default .NET Logger
             .ConfigureWebHostDefaults(webBuilder =>
             {
-                webBuilder.UseStartup<Startup>();
+                webBuilder.UseStartup<Startup>()
+                .UseSerilog(); //Uses Serilog instead of default .NET Logger
             });
     }
 }
